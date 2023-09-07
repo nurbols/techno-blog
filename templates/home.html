@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Main page{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Techno Blog</h1>
+        <p class="lead"><h5>Welcome to Blog!</h5> 
+            Interesting technology-related contents to make you journey more worthwhile! 
+             </p>
+        <hr class="my-4">
+        <p></p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">See posts</a>
+        </p>
+    </div>
+{% endblock content %}
